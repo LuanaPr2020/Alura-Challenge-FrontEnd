@@ -8,10 +8,10 @@
         <link rel="stylesheet" href="css/style.css">
         <link rel="stylesheet" href="css/reset.css">
         <link rel="preconnect" href="https://fonts.gstatic.com">
-        <link href="https://fonts.googleapis.com/css2?family=Inter&display=swap" rel="stylesheet">
+            <link href="https://fonts.googleapis.com/css2?family=Inter&display=swap" rel="stylesheet">
         <link rel="preconnect" href="https://fonts.gstatic.com">
-        <link href="https://fonts.googleapis.com/css2?family=Roboto+Mono&display=swap" rel="stylesheet">
-    </head>
+            <link href="https://fonts.googleapis.com/css2?family=Roboto+Mono&display=swap" rel="stylesheet">
+</head>
 
     <body>
         <header>
@@ -22,7 +22,10 @@
                     <input type="search" id="busca" placeholder="Busque por algo">
                 </div>
 
-                <img class="perfil-foto-cabecalho" src="./img/foto-perfil.png">
+                <div class="user-foto">
+                    <img class ="userfoto-cabecalho" src="./img/foto-perfil.jpg">
+                    <span>Mrs. Luana</span>
+                 </div>
             </div>
         </header>
 
@@ -51,7 +54,8 @@
                     <button class="button-green"></button>
                 </div>
             <textarea class="interior-editor-texto" placeholder="Escreva seu codigo aqui">
-                const pluckDeep = key => obj => key.split('.').reduce((accum, key) => accum[key], obj)
+                
+            const pluckDeep = key => obj => key.split('.').reduce((accum, key) => accum[key], obj)
 
                 const compose = (...fns) => res => fns.reduce((accum, next) => next(accum), res)
                 
